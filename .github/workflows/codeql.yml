@@ -46,7 +46,7 @@ jobs:
     - name: install logjam-libs dependencies
       run: |
         git clone https://github.com/skaes/logjam-libs.git
-        cd loglam-libs
+        cd logjam-libs
         ./bin/install-libs --prefix=/usr/local
 
     # Initializes the CodeQL tools for scanning.
