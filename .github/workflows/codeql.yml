@@ -45,6 +45,7 @@ jobs:
     # dependencies, as described at https://github.com/skaes/logjam-tools#from-source  
     - name: install logjam-libs dependencies
       run: |
+        apt install libcurl-dev
         git clone https://github.com/skaes/logjam-libs.git
         cd logjam-libs
         ./bin/install-libs --prefix=/usr/local
